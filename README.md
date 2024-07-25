@@ -6,6 +6,8 @@ Este script em Python permite que você encontre a localização geográfica de 
 
 Para usar este script no seu sistema baseado em Arch Linux, certifique-se de ter os seguintes pacotes instalados:
 
+*Baseado em Arch linux*
+
 1. **Instale o pipx e requests**:
     ```bash
     sudo pacman -S python-pipx
@@ -18,6 +20,31 @@ Para usar este script no seu sistema baseado em Arch Linux, certifique-se de ter
     source myenv/bin/activate.fish
     pip install requests
     ```
+*Termux*
+
+   ```bash
+   pkg update
+   pkg upgrade -y
+   pkg install python -y
+   pip install --upgrade pip
+   pip install virtualenv
+   python -m virtualenv myenv
+   source myenv/bin/activate
+   pip install requests
+   ```
+*Baseado em Ubuntu*
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo apt install python3-pip -y
+pip install --user pipx
+python3 -m pipx ensurepath
+pipx install virtualenv
+pipx run python -m venv myenv
+source myenv/bin/activate
+pip install requests
+```
 
 ## Como Clonar e Rodar o Script
 
