@@ -73,7 +73,7 @@ def main():
     else:
         print("Não foi possível obter a localização para o IP fornecido.")
 
-    print("\nObrigado por estar usando uma ferramenta do Strang333!")
+    print("\nObrigado por estar usando uma ferramenta do Strang333! Mas se você me conhece bem sabe que é o Matheus do CMM ")
     print_footer()
 
 if __name__ == "__main__":
